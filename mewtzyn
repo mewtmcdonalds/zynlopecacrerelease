@@ -309,7 +309,14 @@ task.spawn(function()
 			end
 		end
 	end
-
+pcall(function()
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Click on someone to view the Steal Outfit buttons",
+		Text = "Will not work on Xeno/Solara",
+		Duration = 8,
+		Button1 = "Okay",
+	})
+end)
 	pcall(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "original source from @nahw",
